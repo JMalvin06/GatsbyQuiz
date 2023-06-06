@@ -198,7 +198,7 @@ getNewQuestion = () =>{
     availableQuestions.splice(questionIndex,1);
     //acceptingAnswers = true;
     if(availableQuestions == 0 || questionCounter >= MAXQUESTIONS){
-        localStorage.setItem("score") = score;
+        //localStorage.setItem("score") = score;
         return window.location.assign("/index.html");
     }
 };
