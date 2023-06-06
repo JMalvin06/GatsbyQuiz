@@ -75,7 +75,7 @@ let questions = [
         
         choice1: "new era, isolation, absoluteness (nothing new)",
         /*choice2: "System.out.print(\"Hello World\"",*/
-        choice2: "system.Out.Print(\"Hello World\")",
+        choice2: "Represents the mood",
         choice3: "the simultaneous desire to reach our future and relive our past",
         /* Answer */
         choice4: "death, despair, decay of morality as a result of wealth, the \"leftovers\" of this society",
