@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gatsby Quiz</title>
     <link rel="stylesheet" href="home.css">
-    <script src="game.js"></script>
+    <script>
+        let scoreText = document.getElementById("score-text");
+        scoreText.innerText = localStorage.getItem("score");
+    </script>
 </head>
 <body>
     <div class="container">
         <div id="home" class="flex-center flex-column">
             <h1>Results of the Quiz!</h1>
-            <h3>Score</h3>
+            <h3 id="score-text">Score</h3>
             <a class="btn" href="/home.html">Back to homepage</a>
         </div>
     </div>

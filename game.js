@@ -14,18 +14,16 @@ const MAXQUESTIONS = 10;
 
 let questions = [
     {
-        question:"What is the correct way to print a message in java?",
-        choice1: "print(\"Hello World\")",
+        
+        choice1: "display of false pretenses",
         /*choice2: "System.out.print(\"Hello World\"",*/
-        choice2: "system.Out.Print(\"Hello World\")",
-        choice3: "printOut(\"Hello World\");",
+        choice2: "Represents the mood",
+        choice3: "smoldering remains of the lower class that is trying to rise up",
         /* Answer */
         choice4: "materialism, extravagance, idea of a different life",
         image: "shirt.png"
     },
     {
-        question: "Test Question (Too much work to make a real one)",
-        /*answer: "true",*/
         choice1: "false&&true",
         choice2: "false",
         choice3: "!true",
@@ -34,7 +32,7 @@ let questions = [
         image: "library.png"
     },
     {
-        question:"What is the correct way to print a message in java?",
+        
         choice1: "print(\"Hello World\")",
         /*choice2: "System.out.print(\"Hello World\"",*/
         choice2: "system.Out.Print(\"Hello World\")",
@@ -44,7 +42,7 @@ let questions = [
         image: "balloon.png"
     },
     {
-        question:"What is the correct way to print a message in java?",
+        
         choice1: "print(\"Hello World\")",
         /*choice2: "System.out.print(\"Hello World\"",*/
         choice2: "system.Out.Print(\"Hello World\")",
@@ -54,7 +52,7 @@ let questions = [
         image: "child.png"
     },
     {
-        question:"What is the correct way to print a message in java?",
+        
         choice1: "print(\"Hello World\")",
         /*choice2: "System.out.print(\"Hello World\"",*/
         choice2: "system.Out.Print(\"Hello World\")",
@@ -64,7 +62,7 @@ let questions = [
         image: "car.png"
     },
     {
-        question:"What is the correct way to print a message in java?",
+        
         choice1: "print(\"Hello World\")",
         /*choice2: "System.out.print(\"Hello World\"",*/
         choice2: "system.Out.Print(\"Hello World\")",
@@ -74,7 +72,7 @@ let questions = [
         image: "eyes.png"
     },
     {
-        question:"What is the correct way to print a message in java?",
+        
         choice1: "print(\"Hello World\")",
         /*choice2: "System.out.print(\"Hello World\"",*/
         choice2: "system.Out.Print(\"Hello World\")",
@@ -84,7 +82,7 @@ let questions = [
         image: "ash.png"
     },
     {
-        question:"What is the correct way to print a message in java?",
+        
         choice1: "print(\"Hello World\")",
         /*choice2: "System.out.print(\"Hello World\"",*/
         choice2: "system.Out.Print(\"Hello World\")",
@@ -94,7 +92,7 @@ let questions = [
         image: "west.png"
     },
     {
-        question:"What is the correct way to print a message in java?",
+        
         choice1: "print(\"Hello World\")",
         /*choice2: "System.out.print(\"Hello World\"",*/
         choice2: "system.Out.Print(\"Hello World\")",
@@ -104,7 +102,7 @@ let questions = [
         image: "east.png"
     },
     {
-        question:"What is the correct way to print a message in java?",
+        
         choice1: "print(\"Hello World\")",
         /*choice2: "System.out.print(\"Hello World\"",*/
         choice2: "system.Out.Print(\"Hello World\")",
@@ -114,7 +112,7 @@ let questions = [
         image: "death.png"
     },
     {
-        question:"What is the correct way to print a message in java?",
+        
         choice1: "print(\"Hello World\")",
         /*choice2: "System.out.print(\"Hello World\"",*/
         choice2: "system.Out.Print(\"Hello World\")",
@@ -124,7 +122,7 @@ let questions = [
         image: "gun.png"
     },
     {
-        question:"What is the correct way to print a message in java?",
+        
         choice1: "print(\"Hello World\")",
         /*choice2: "System.out.print(\"Hello World\"",*/
         choice2: "system.Out.Print(\"Hello World\")",
@@ -134,7 +132,7 @@ let questions = [
         image: "green.png"
     },
     {
-        question:"What is the correct way to print a message in java?",
+        
         choice1: "print(\"Hello World\")",
         /*choice2: "System.out.print(\"Hello World\"",*/
         choice2: "system.Out.Print(\"Hello World\")",
@@ -144,7 +142,7 @@ let questions = [
         image: "house.png"
     },
     {
-        question:"What is the correct way to print a message in java?",
+        
         choice1: "print(\"Hello World\")",
         /*choice2: "System.out.print(\"Hello World\"",*/
         choice2: "system.Out.Print(\"Hello World\")",
@@ -154,7 +152,7 @@ let questions = [
         image: "daisy.png"
     },
     {
-        question:"What is the correct way to print a message in java?",
+        
         choice1: "print(\"Hello World\")",
         /*choice2: "System.out.print(\"Hello World\"",*/
         choice2: "system.Out.Print(\"Hello World\")",
@@ -164,7 +162,7 @@ let questions = [
         image: "time.png"
     },
     {
-        question:"What is the correct way to print a message in java?",
+        
         choice1: "print(\"Hello World\")",
         /*choice2: "System.out.print(\"Hello World\"",*/
         choice2: "system.Out.Print(\"Hello World\")",
@@ -185,12 +183,12 @@ startGame = () =>{
 
 getNewQuestion = () =>{
     if(availableQuestions == 0 || questionCounter >= MAXQUESTIONS){
-        return window.location.assign("/index.html");
+        localStorage.setItem("score") = score;
+        return window.location.assign("/results.html");
     }
     questionCounter++;
     questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
-    question.innerText = currentQuestion.question;
     let currentImage = document.getElementsByClassName("gatsby-image");
     currentImage[0].src = "images/" + currentQuestion["image"];
     choices = shuffle(choices);
