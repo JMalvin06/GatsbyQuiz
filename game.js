@@ -182,10 +182,6 @@ startGame = () =>{
 };
 
 getNewQuestion = () =>{
-    if(availableQuestions == 0 || questionCounter >= MAXQUESTIONS){
-        localStorage.setItem("score") = score;
-        return window.location.assign("/results.html");
-    }
     questionCounter++;
     questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
@@ -201,7 +197,10 @@ getNewQuestion = () =>{
     });
     availableQuestions.splice(questionIndex,1);
     //acceptingAnswers = true;
-    
+    if(availableQuestions == 0 || questionCounter >= MAXQUESTIONS){
+        localStorage.setItem("score") = score;
+        return window.location.assign("/index.html");
+    }
 };
 
 choices.forEach(choice =>{
