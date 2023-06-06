@@ -1,22 +1,27 @@
 const question = document.getElementById("question");
-const choices = Array.from(document.getElementsByClassName('choice-text'));
+let choices = Array.from(document.getElementsByClassName('choice-text'));
 
 let currentQuestion = {};
-let acceptingAnswers = false;
+//let acceptingAnswers = false;
 let score;
 let questionCounter;
 let availableQuestions = [];
 let answerNumber;
+let questionIndex = 0;
+let isScoring = true;
+
+const MAXQUESTIONS = 10;
 
 let questions = [
     {
         question:"What is the correct way to print a message in java?",
-        choice1: "print(\"Hello World\"",
+        choice1: "print(\"Hello World\")",
         /*choice2: "System.out.print(\"Hello World\"",*/
-        choice2: "system.Out.Print(\"Hello World\"",
-        choice3: "printOut(\"Hello World\"",
+        choice2: "system.Out.Print(\"Hello World\")",
+        choice3: "printOut(\"Hello World\");",
         /* Answer */
-        choice4: "System.out.print(\"Hello World\""
+        choice4: "System.out.print(\"Hello World\");",
+        image: "car.png"
     },
     {
         question: "Test Question (Too much work to make a real one)",
@@ -25,7 +30,8 @@ let questions = [
         choice2: "false",
         choice3: "!true",
         /* Answer */
-        choice4: "true"
+        choice4: "true",
+        image: "ash.png"
     }
 
 ];
@@ -34,24 +40,57 @@ startGame = () =>{
     availableQuestions = [...questions];
     score = 0;
     questionCounter = 0;
+    console.log(choices);
     getNewQuestion();
 };
 
 getNewQuestion = () =>{
+    if(availableQuestions == 0 || questionCounter >= MAXQUESTIONS){
+        return window.location.assign("/index.html");
+    }
     questionCounter++;
-    const questionIndex = Math.floor(Math.random() * availableQuestions.length);
+    questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
     question.innerText = currentQuestion.question;
+    let currentImage = document.getElementsByClassName("gatsby-image");
+    currentImage[0].src = "images/" + currentQuestion["image"];
+    choices = shuffle(choices);
+    console.log(choices);
+    let number = 0;
     choices.forEach(choice =>{
-        const number = choice.dataset["data-number"];
-        choice.innerText = questions["choice" + number];
+        number++;
+        //const number = choice.dataset["number"];
+        choice.innerText = currentQuestion["choice" + number];
     });
-    questions.splice(questionIndex,1);
-    acceptingAnswers = true;
-    //choices = shuffle(choices);
+    availableQuestions.splice(questionIndex,1);
+    //acceptingAnswers = true;
+    
 };
+
+choices.forEach(choice =>{
+    choice.addEventListener("click", e => {
+        
+        //if(!acceptingAnswers) return;
+        acceptingAnswers = false
+        let selectedChoice = e.target;
+        let selectedAnswer = selectedChoice.innerText;
+        console.log("click");
+        if(selectedAnswer == currentQuestion["choice4"]) {
+            if(isScoring)
+                score++;
+            isScoring = true;
+            console.log(score);
+            getNewQuestion();
+        }
+        else if(!selectedChoice.innerText.includes("❌")){
+            selectedChoice.innerText += " ❌";
+            isScoring = false;
+        } 
+        //getNewQuestion();
+    });
+});
 startGame();
-/*function shuffle(array) {
+function shuffle(array) {
     let currentIndex = array.length,  randomIndex;
   
     // While there remain elements to shuffle.
@@ -67,4 +106,4 @@ startGame();
     }
   
     return array;
-  }*/
+  }

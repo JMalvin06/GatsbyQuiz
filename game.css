@@ -13,7 +13,9 @@
 }
 
 .choice-text {
-    margin: 1.5rem;
+    padding: 1.5rem;
+    width: 100%;
+    /*height: 100%;*/
 }
 
 .choice-container:active {
@@ -21,4 +23,10 @@
     box-shadow: 0 0.4rem 1.4rem 0 rgba(21, 32, 37, 0.5);
     transform: translateY(-0.1rem);
     transition: transform 150ms;
+}
+img{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width:80%;
 }
