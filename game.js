@@ -24,149 +24,149 @@ let questions = [
         image: "shirt.png"
     },
     {
-        choice1: "false&&true",
-        choice2: "false",
-        choice3: "!true",
+        choice1: "materialism, extravagance, idea of a different life",
+        choice2: "new era, isolation, absoluteness (nothing new)",
+        choice3: "display of false pretenses",
         /* Answer */
         choice4: "Display of Gatsby\'s actuality, his \"realness\"",
         image: "library.png"
     },
     {
         
-        choice1: "print(\"Hello World\")",
+        choice1: "success, wealth",
         /*choice2: "System.out.print(\"Hello World\"",*/
-        choice2: "system.Out.Print(\"Hello World\")",
-        choice3: "printOut(\"Hello World\");",
+        choice2: "All knowing and all seeing",
+        choice3: "old money, power",
         /* Answer */
         choice4: "new era, isolation, absoluteness (nothing new)",
         image: "balloon.png"
     },
     {
         
-        choice1: "print(\"Hello World\")",
+        choice1: "materialism, extravagance, idea of a different life",
         /*choice2: "System.out.print(\"Hello World\"",*/
-        choice2: "system.Out.Print(\"Hello World\")",
-        choice3: "printOut(\"Hello World\");",
+        choice2: "smoldering remains of the lower class that is trying to rise up",
+        choice3: "success, wealth",
         /* Answer */
         choice4: "display of false pretenses",
         image: "child.png"
     },
     {
         
-        choice1: "print(\"Hello World\")",
+        choice1: "All knowing and all seeing",
         /*choice2: "System.out.print(\"Hello World\"",*/
-        choice2: "system.Out.Print(\"Hello World\")",
-        choice3: "printOut(\"Hello World\");",
+        choice2: "death, despair, decay of morality as a result of wealth, the \"leftovers\" of this society",
+        choice3: "display of false pretenses",
         /* Answer */
-        choice4: "success, wealth",
+        choice4: "success, wealth, carelesness",
         image: "car.png"
     },
     {
         
-        choice1: "print(\"Hello World\")",
+        choice1: "represents his life, how much he has worked and sacrificed to impress daisy",
         /*choice2: "System.out.print(\"Hello World\"",*/
-        choice2: "system.Out.Print(\"Hello World\")",
-        choice3: "printOut(\"Hello World\");",
+        choice2: "Represents the mood",
+        choice3: "display of false pretenses",
         /* Answer */
         choice4: "All knowing and all seeing",
         image: "eyes.png"
     },
     {
         
-        choice1: "print(\"Hello World\")",
+        choice1: "new era, isolation, absoluteness (nothing new)",
         /*choice2: "System.out.print(\"Hello World\"",*/
         choice2: "system.Out.Print(\"Hello World\")",
-        choice3: "printOut(\"Hello World\");",
+        choice3: "the simultaneous desire to reach our future and relive our past",
         /* Answer */
         choice4: "death, despair, decay of morality as a result of wealth, the \"leftovers\" of this society",
         image: "ash.png"
     },
     {
         
-        choice1: "print(\"Hello World\")",
+        choice1: "new era, isolation, absoluteness (nothing new)",
         /*choice2: "System.out.print(\"Hello World\"",*/
-        choice2: "system.Out.Print(\"Hello World\")",
-        choice3: "printOut(\"Hello World\");",
+        choice2: "success, wealth, carelesness",
+        choice3: "represents his life, how much he has worked and sacrificed to impress daisy",
         /* Answer */
         choice4: "new money, success",
         image: "west.png"
     },
     {
         
-        choice1: "print(\"Hello World\")",
+        choice1: "the simultaneous desire to reach our future and relive our past",
         /*choice2: "System.out.print(\"Hello World\"",*/
-        choice2: "system.Out.Print(\"Hello World\")",
-        choice3: "printOut(\"Hello World\");",
+        choice2: "Represents the mood",
+        choice3: "display of false pretenses",
         /* Answer */
         choice4: "old money, power",
         image: "east.png"
     },
     {
         
-        choice1: "print(\"Hello World\")",
+        choice1: "new era, isolation, absoluteness (nothing new)",
         /*choice2: "System.out.print(\"Hello World\"",*/
-        choice2: "system.Out.Print(\"Hello World\")",
-        choice3: "printOut(\"Hello World\");",
+        choice2: "Lost romance",
+        choice3: "success, wealth, carelesness",
         /* Answer */
         choice4: "smoldering remains of the lower class that is trying to rise up",
         image: "death.png"
     },
     {
         
-        choice1: "print(\"Hello World\")",
+        choice1: "represents his life, how much he has worked and sacrificed to impress daisy",
         /*choice2: "System.out.print(\"Hello World\"",*/
-        choice2: "system.Out.Print(\"Hello World\")",
-        choice3: "printOut(\"Hello World\");",
+        choice2: "the simultaneous desire to reach our future and relive our past",
+        choice3: "Lost romance",
         /* Answer */
         choice4: "violence,heatlessness of the society",
         image: "gun.png"
     },
     {
         
-        choice1: "print(\"Hello World\")",
+        choice1: "Lost romance",
         /*choice2: "System.out.print(\"Hello World\"",*/
-        choice2: "system.Out.Print(\"Hello World\")",
-        choice3: "printOut(\"Hello World\");",
+        choice2: "Represents the mood",
+        choice3: "represents his life, how much he has worked and sacrificed to impress daisy",
         /* Answer */
         choice4: "want, hope, desire, longing",
         image: "green.png"
     },
     {
         
-        choice1: "print(\"Hello World\")",
+        choice1: "success, wealth, carelesness",
         /*choice2: "System.out.print(\"Hello World\"",*/
-        choice2: "system.Out.Print(\"Hello World\")",
-        choice3: "printOut(\"Hello World\");",
+        choice2: "display of false pretenses",
+        choice3: "new era, isolation, absoluteness (nothing new)",
         /* Answer */
         choice4: "represents his life, how much he has worked and sacrificed to impress daisy",
         image: "house.png"
     },
     {
         
-        choice1: "print(\"Hello World\")",
+        choice1: "want, hope, desire, longing",
         /*choice2: "System.out.print(\"Hello World\"",*/
-        choice2: "system.Out.Print(\"Hello World\")",
-        choice3: "printOut(\"Hello World\");",
+        choice2: "the simultaneous desire to reach our future and relive our past",
+        choice3: "violence,heatlessness of the society",
         /* Answer */
         choice4: "Lost romance",
         image: "daisy.png"
     },
     {
         
-        choice1: "print(\"Hello World\")",
+        choice1: "want, hope, desire, longing",
         /*choice2: "System.out.print(\"Hello World\"",*/
-        choice2: "system.Out.Print(\"Hello World\")",
-        choice3: "printOut(\"Hello World\");",
+        choice2: "violence,heatlessness of the society",
+        choice3: "Represents the mood",
         /* Answer */
         choice4: "the simultaneous desire to reach our future and relive our past",
         image: "time.png"
     },
     {
         
-        choice1: "print(\"Hello World\")",
+        choice1: "success, wealth, carelesness",
         /*choice2: "System.out.print(\"Hello World\"",*/
-        choice2: "system.Out.Print(\"Hello World\")",
-        choice3: "printOut(\"Hello World\");",
+        choice2: "display of false pretenses",
+        choice3: "violence,heatlessness of the society",
         /* Answer */
         choice4: "Represents the mood",
         image: "weather.png"
